@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../CSS/task3.css">
+  <link rel="stylesheet" href="../CSS/complaints.css">
+  <link rel="stylesheet" href="../CSS/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E_Police</title>   
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul class="nav_links">
+        <button class="b" onclick="location.href = '../HTML/index.html';" id="myButton"><b>HOME</b></button>
+      </ul>
+    </nav>
+
+  </header>
+  
+  <section class="bgimg"></section>
+  <div class="form">   
+    <form  id="regform" class="registerform">
+      <h2 class="head">SIGN UP</h2>
+      <div class="pos">
+        <label for="uname">Username :</label>
+        <input class="button1" type="text" placeholder="Input Username here" id="un"></input><br>
+        <label for="email">Email-Id :</label>
+        <input class="button1" type="email" placeholder="Input Email here" id="email"></input><br>
+        <label for="psw">Password :</label>
+        <input class="button1" type="password" placeholder="Input Password here" id="pw"></input><br>
+      </div>
+      <button class="sub" type="submit" onclick="signup()">Sign Up</button>
+      <p class="msg">Already Registered? <a id="log" onclick="log()">Login</a></p>
+    </form>
+    
+    
+    <form id="logform" class="loginform">
+      
+      <h2 class="head">LOGIN</h2>
+      <div class="pos">
+        <label for="uname">Username :</label>
+        <input type="text" placeholder="Enter Username" name="uname"  id="username"><br>
+        <label for="psw">Password :</label>
+        <input type="password" placeholder="Enter Password" name="psw" id="password"><br>
+      </div>
+      <button class="sub" type="submit" onclick="logi()">Login</button>
+      <p class="msg">Not Registered? <a id="sign" onclick="sign()">Register</a></p>
+      
+    </form>
+  </div>
+</body>
+<script src="../JavaScript/task.js"></script>
+<script src="../JavaScript/login.js"></script>
+
+<script src="../JavaScript/index.js"></script>
+</html>
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaints</title>
+    <link rel="stylesheet" href="../CSS/task3.css">
+    <link rel="stylesheet" href="../CSS/complaints.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <button class="b" onclick="location.href = '../HTML/index.html';" id="myButton">HOME</button>
+                <button class="b" onclick="location.href = '../HTML/complaint.html';" id="myButton">Complaints</button>
+                <button class="b" onclick="location.href = '../HTML/trackstatus.html';" id="myButton">Track Status</button>
+                <button class="b" onclick="location.href = '../HTML/station.html';" id="myButton">Help</button>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <form id="complaintForm"  autocomplete="off" required>
+        
+        <div id="complaintForm">
+             
+            Fullname:
+            <input id="fname"type=text name=name placeholder="Enter your Name">
+            <br>
+            Phone Number:
+            <input id="phno" type=number name=phno placeholder="Enter your Phone number">
+            <br>
+            Address:
+            <input id="address" type=text name=address placeholder="Enter your Address">
+            <br>
+            Area:
+            <input id="area" type=text name=area placeholder="Enter your Area">
+            <br>
+            
+        </form>
+
+            Complaint:
+            <input type="text" name="complaint" id="complaint" placeholder="Enter a New complaint">
+
+        </div>
+    
+        <button id="add" onclick="crud()">ADD</button>
+  
+    <table id="complaintTable">
+        <tr>
+                <tr>
+                        <h2 id="complist">COMPLAINTS LIST</h2>
+                        
+                    </tr>
+            <td>
+                <table class="displayComplaint" id="displayComplaint">
+                    <thead>
+                        <tr>
+                                
+                            <th>Full Name</th>
+                            <th>Phone Number</th>
+                            <th>Address</th>
+                            <th>Area</th>
+                            <th>Complaint</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+   
+<p id="counter"></p>   
+</div>
+
+</body>
+
+<script src="../JavaScript/index.js"></script>
+<script src="../JavaScript/crud.js"></script>
+
+</html>
+

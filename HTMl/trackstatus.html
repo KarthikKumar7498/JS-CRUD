@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Status</title>
+    <link rel="stylesheet" href="../CSS/task3.css">
+    <link rel="stylesheet" href="../CSS/complaints.css">
+    <link rel="stylesheet" href="../CSS/trackStatus.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul class="nav_links">
+                <button class="b" onclick="location.href = '../HTML/index.html';" id="myButton">Home</button>
+                <button class="b" onclick="location.href = '../HTML/complaint.html';" id="myButton">Complaints</button>
+                <button class="b" onclick="location.href = '../HTML/trackstatus.html';" id="myButton">Track Status</button>
+                <button class="b" onclick="location.href = '../HTML/station.html';" id="myButton">Help</button>
+              
+            </ul>
+        </nav>
+    </header>
+    
+    <img class="trackImage" src="../li.jpg" alt="background">
+    <button id="ePolice">About E-Police</button>
+
+<!-- The Modal -->
+<div id="Modal" class="modal">
+
+  
+  <div class="content">
+    <span class="close">&times;</span>
+    <p>To call the police is a really big deal because we don't snitch - that's the culture we grow up in.  </p>
+    <p> Then there is E-Police in that case through which we can confidently help the police to serve the country.</p>
+    <p> United we stand, Divided we fall. Justice will be served!</p>
+  </div>
+
+</div>
+    
+            <button id="trackStatus" onclick="trackStatus()">Track Status</button>
+        <p id="result"></p>
+        <br>
+        <br>
+    </div>
+</body>
+<script src="../JavaScript/crud.js"></script>
+<script src="../JavaScript/trackStatus.js"></script>
+</html>
